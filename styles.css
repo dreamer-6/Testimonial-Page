@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #D4D4D8;
+    
+}
+.review{
+    height: 1050px;
+    background-color: #FAFAF9;
+    padding: 15px;
+    max-width: 640px;
+    margin: 150px auto;
+    position: relative;
+}
+.starfill{
+    width: 50px;
+    height: 50px;
+    margin-top: 50px;
+}
+h1{
+    font-size: 2.25rem;
+    margin: 20px 0 0;
+}
+.review-info{
+    font-size: 1.22rem;
+    color: #52525a;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+.done{
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    gap:10px;
+}
+.done p{
+    font-size: .875rem;
+    color: #52525a;
+    padding: 10px 0;
+}
+.rate-container{
+    background-color:#fff ;
+    margin: 30px 0;
+    border-radius: 20px;
+    padding: 30px 40px;
+    transition: all 0.3s ease;
+}
+.rate-container:hover{
+    transform: scale(1.02);
+    box-shadow: 2px 2px 20px #52525a9d;
+}
+.brand{
+    display: flex;
+    gap: 20px;
+}
+.brand-info h2{
+    font-size: 1rem;
+    padding: 18px 0;
+}
+.brand-info p{
+    font-size: 1rem;
+    color: #52525a;
+}
+.brand-info #indent{
+    margin-right: 250px;
+    line-height: 1.8;
+}
+@media (min-width:1024px){
+    .review{
+    max-width: 1024px;
+    width: 100%;
+    }
+    .brand-info #indent{
+    margin-right: 40px;
+    line-height: 1.8;
+}
+    .rate-container{
+    width: 40%;
+    }
+    #google{
+        position: absolute;
+        left: 400px;
+    }
+    #meta{
+        position: absolute;
+        top: 780px;
+        left: 200px;
+    }
+    
+}
+@media (min-width:1280px){
+    .review{
+    max-width: 1280px;
+    width: 100%;
+    height: 700px;
+    }
+    .rev-sec{
+        width: 50%;
+        padding: 0 48px;
+        
+    }
+    .rate-container{
+    width: 30%;
+    padding-right: 50px;
+    }
+    #google{
+        position: absolute;
+        top: 100px;
+        left: 830px;
+    }
+    #meta{
+        position: absolute;
+        top: 350px;
+        left: 650px;
+        padding-right: 20px;
+    }
+}
